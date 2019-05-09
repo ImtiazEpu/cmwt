@@ -1,0 +1,20 @@
+/*
+Theme Name: launcher Coming Soon
+Theme URI: https://www.imtiazepu.com
+Author: Imtiaz epu
+Author URI: https://www.imtiazepu.com/wp-theme
+Description: Coming soon WordPress Theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: coming soon, clean, countdown
+Text Domain: launcher
+*/
+
+#fh5co-logo a{
+    font-size: 56px;
+    color: #122b40 !important;
+}
+#fh5co-logo{
+    margin-top: 30px;
+}
