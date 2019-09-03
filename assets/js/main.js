@@ -88,9 +88,9 @@
 	var countDown = function() {
 
 		simplyCountdown('.simply-countdown-one', {
-			year: "2019",
-			month: "05",
-			day: "30"
+			year: countdowdata.year,
+			month: countdowdata.month,
+			day: countdowdata.day
 		});
 
 	};
