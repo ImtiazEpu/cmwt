@@ -13,7 +13,7 @@ $button = get_post_meta(get_the_ID(),"button",true);*/
 
 ?>
 
-    <body>
+    <body <?php body_class();?>>
     <div class="fh5co-loader"></div>
 
     <aside id="fh5co-aside" role="sidebar" class="text-center home-side-style">
