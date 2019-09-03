@@ -7,10 +7,6 @@
 <?php
 the_post();
 get_header();
-/*$placeholder = get_post_meta(get_the_ID(),"placeholder",true);
-$hint = get_post_meta(get_the_ID(),"hint",true);
-$button = get_post_meta(get_the_ID(),"button",true);*/
-
 ?>
 
     <body <?php body_class();?>>
@@ -38,13 +34,16 @@ $button = get_post_meta(get_the_ID(),"button",true);*/
                             </div>
 
                             <div class="col-lg-7 animate-box">
-                                <form action="#" id="fh5co-subscribe">
+                                <div id="fh5co-subscribe">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="<?php the_field('placeholder')?>">
-                                        <input type="submit" value="<?php the_field('button');?>" class="btn btn-primary">
-                                        <p class="tip"><?php the_field('hint');?></p>
+		                            <?php
+		                            if (get_field("subscribe_shortcode")){
+			                            echo do_shortcode(get_field("subscribe_shortcode"));
+		                            }
+		                            ?>
                                     </div>
-                                </form>
+                                </div>
+
                             </div>
                         </div>
                     </div>

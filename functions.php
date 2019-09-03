@@ -1,4 +1,6 @@
 <?php
+require_once get_theme_file_path('/inc/tgm.php');
+require_once get_theme_file_path('/inc/acf-mb.php');
 if ( site_url() == "http://lwhh.web" ) {
 	define( "VERSION", time() );
 } else {
@@ -89,3 +91,5 @@ function launcher_style() {
 }
 
 add_filter( "wp_head", "launcher_style" );
+
+add_filter('acf/settings/show_admin','__return_false');
