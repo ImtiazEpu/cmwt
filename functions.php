@@ -35,7 +35,7 @@ function launcher_sidebar(){
 			'name'          => __( 'Footer Left', "launcher" ),
 			'id'            => 'footer-left',
 			'description'   => __( 'Widgetized Area On The Left Footer"', 'launcher' ),
-			'before_widget' => '<section id="fh5co-social %1$s" class="widget %2$s">',
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
@@ -60,7 +60,7 @@ function launcher_style(){
 		$thumbnail_url = get_the_post_thumbnail_url(null,"large");
 		?>
 		<style>
-			.side-style{
+			.home-side-style{
 				background-image: url(<?php echo $thumbnail_url;?>);
 			}
 		</style>
